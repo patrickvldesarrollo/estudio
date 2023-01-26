@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas de Practica - ALAMOSYCIA</title>
+    <link rel="icon" href="/img/icono.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/estilo.css">
+
+</head>
+
+
+
+<body>
+
+    <!-- Encabezado -->
+        
+    <header>
+
+        <ul class="menu navbar-fixed-top" style="text-align: center;">
+            <li class="titulo align-middle"><h1>Alamos y CIA<p>Estudio Juridico</p></h1></li>
+            <li><a href="/html/inicio.html">Inicio</a></li>
+            <li><a href="/html/quienessomos.html">Quienes Somos</a></li>
+            <li class="actual"><a href="#">Areas de Practica</a></li>
+            <li><a href="/html/contactos.html">Contactos</a></li>
+        </ul>
+        
+    </header>
+
+
+    <div class="fondo">
+        <div id="fondo"></div>
+    </div>
+    
+    
+    <!-- Inicio del cuerpo de la pagina -->
+
+    <div class="contenedor">
+        
+
+        <div style="text-align: center;">
+            
+            
+
+            <h1 class="fadein">Somos Alamos y CIA, conoce nuestros servicios.</h1>
+
+            <hr class="linea">
+        </div>
+
+        <div style="text-align: center;" class="fadein2">
+
+
+        <img class="imagen_chica" src="/img/area.png" alt="">
+        
+        <hr class="linea">
+        
+        </div>
+
+        <hr></hr>
+
+
+        <button type="button" class="collapsible">Escritos y Contratos</button>
+
+        <div class="content">
+
+            <p>Contamos con abogados especialistas en la redacción y revisión de contratos civiles, comerciales e inmobiliarios.</p>
+
+            <p>Un buen negocio o inversión requiere  que usted esté protegido ante eventuales contratos mal redactados, o con cláusulas que no le son favorables o derechamente lo perjudican, contáctenos, evitando pérdidas de tiempo, dinero y molestias.</p>
+            
+            <div style="text-align: center;">
+            
+                <a href="/html/contactos.html"><button class="boton boton_chico"><span>¿Es lo que necesitas? Contactate con nosotros.</span></button></a>
+            
+            </div>
+            
+        </div>
+
+        <hr>
+
+        <button type="button" class="collapsible">Asesoria a Corredores de Propiedades</button>
+
+        <div class="content">
+
+            <p>Ofrecemos asesoría legal integral a corredores de propiedades, en todas las etapas de su gestión.</p>
+
+            <p>Contamos con abogados especialistas en derecho inmobiliaria, pra realizar estudios de títulos, redacción, revisión y rectificación de escrituras y contratos.  Subsanamos errores encontrados por el Conservador de Bienes Raíces.</p>
+
+            <div style="text-align: center;">
+            
+                <a href="/html/contactos.html"><button class="boton boton_chico"><span>¿Es lo que necesitas? Contactate con nosotros.</span></button></a>
+            
+            </div>
+
+        </div>
+
+        <hr>
+
+        <button type="button" class="collapsible">Rechazo Inscripcion Conservador</button>
+
+        <div class="content">
+
+          <p>Si un Conservador de Bienes Raíces  rechazó la solicitud de inscripción de una compraventa, usufructo o herencia, efectuando un reparo a las escrituras presentadas, contamos con abogados especialistas en derecho registral, para corregir la escritura y subsanar el reparo encontrado, para permitir que se inscriba adecuadamente.</p>
+
+          <div style="text-align: center;">
+            
+            <a href="/html/contactos.html"><button class="boton boton_chico"><span>¿Es lo que necesitas? Contactate con nosotros.</span></button></a>
+        
+            </div>
+
+        </div>
+
+        <hr>
+
+        <hr class="linea">
+    
+    </div>
+
+    
+
+    <!-- Final del cuerpo de la pagina -->
+    
+
+
+
+    <!-- Pie de Pagina -->
+
+    <section class="qs">
+
+        <div style="text-align: center;">
+
+            <h1>¿Servicios Legales? Alamos y CIA.</h1>
+
+            <hr class="linea2">
+            
+        </div>
+
+        <div class="row" style="text-align: center;">
+
+            <div class="col-4">
+
+                <h1>Ubicación</h1>
+                <p>Av. Providencia 2303, Las Condes, Santiago.</p>
+
+            </div>
+
+            <div class="col-4">
+
+                <h1>Contactos</h1>
+                <p>+56 9 3456 7890</p>
+                <p>contacto@alamosycia.cl</p>
+            </div>
+
+            <div class="col-4">
+
+                <a href="#"><button class="boton ws"><span>Whatsapp</span></button></a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div>
+        
+        <footer style="text-align: center;">
+
+            <a >Alamos y CIA - &copy 2023 - Derechos reservados</a>
+        
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        var fondo = document.getElementById('fondo')
+        window.addEventListener('scroll',function(){
+            fondo.style.opacity = 1 - +window.pageXOffset/500+''
+            fondo.style.top = +window.pageYOffset+'px'
+            fondo.style.backgroundPositionY = - +window.pageYOffset/1+'px'
+        })
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/** ---------------------Contenedores y Body---------------------**/
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    background: rgb(248, 245, 245);
+    margin: 0px;
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 1900px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.contenedor-lista{
+    margin: 15px;
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.contenedor h1 {
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor-lista h1 {
+    font-weight: normal;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+p{
+    font-size: 14px;
+}
+
+.areas{
+    height:  auto;
+    background-color:rgb(34, 3, 56);
+    color: #fff;
+    padding: 30px;
+    margin: 0px auto;
+}
+
+/** ---------------------Imagenes de Fondo---------------------**/
+
+.fondo{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: whitesmoke;
+}
+
+.fondogrande{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: whitesmoke;
+}
+
+.sinfondo{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    background: whitesmoke;
+}
+
+.fondo #fondo
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    filter: brightness(50%);
+    background-image: url(/img/fondo.jpg);
+}
+
+.fondogrande #fondo
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    filter: brightness(50%);
+    background-image: url(/img/fondo.jpg);
+}
+
+.fondo #depa
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-image: url(/img/depa.jpeg);
+}
+
+.fondologin{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    filter:grayscale(100%);
+    background: whitesmoke;
+}
+
+.fondologin #fondo
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-image: url(/img/fondo.jpg);
+}
+
+.imagen{
+
+    width: 100%;
+
+}
+
+.imagen_chica{
+    
+    height: 300px;
+
+
+}
+/** ---------------------Aside y sus partes---------------------**/
+aside{
+    float: left;
+}
+
+aside h1{
+    text-align: center;
+}
+
+
+/** ---------------------Quienes Somos---------------------**/
+
+.qs{
+    height: fit-content;
+    background-color: rgb(34, 3, 56);
+    color: white;
+    padding: 10px;
+    position:sticky;
+}
+
+.qs h1{
+    font-size: 18px;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.qs p{
+    font-size: 13px;
+}
+
+
+/** ---------------------Menu / Navegador---------------------**/
+.menu {
+    list-style: none;
+    background:rgb(34, 3, 56);
+    margin: 5px;
+}
+
+.menu li {
+    display: inline-block;
+}
+.menu li a {
+    transition: 0.5s;
+    color:white;
+    text-decoration: none;
+    display:block;
+    padding: 13px;
+    font-size: 11px;
+    font-weight: normal;
+    transition: background-color 0.3s ease-out;
+}
+
+.menu li a:hover {
+    border-radius: 4px;
+    background-color: #30af74;
+    cursor: pointer;
+}
+
+.actual {
+    border-radius: 4px;
+    background: hsl(177, 57%, 44%);
+}
+
+.login{
+    border-radius: 0px;
+    background: rgb(38, 201, 138);
+    
+}
+
+.login:hover{
+    transition: border-radius 0.3s ease-out;
+    border-radius: 4px;
+}
+
+#verIcon{
+    margin-left: -75px;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    position:fixed;
+    background:rgb(34, 3, 56);
+    padding: 1px;
+    z-index: 9;
+}
+
+h2{
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.texto{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.titulo h1 {
+    color: white;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fadein{
+    animation-duration: 1s;
+    animation-name: fadein;
+}
+
+.fadein2{
+    animation-duration: 3s;
+    animation-name: fadein2;
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0%;
+    }
+  
+    to {
+      opacity: 100%;
+    }
+  }
+
+@keyframes fadein2 {
+    from {
+    opacity: 0%;
+    }
+
+    to {
+    opacity: 100%;
+    }
+}
+
+.titulo p {
+    letter-spacing: 0.10em;
+    word-spacing: 0.10em;
+    font-weight: bolder;
+    font-size: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+img {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px !important;
+}
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+th {
+    background: rgb(34, 3, 56);
+    color: #fff;
+}
+
+tr:hover {
+    transition: 0.3s;
+    background: #e5e5e5;
+}
+
+/**---------------------Boton Normal / Cliente---------------------**/
+
+.boton {
+    border-radius: 4px;
+    background-color: rgb(34, 3, 56);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+    width: 95%;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.boton:hover {
+    transition: 0.2s;
+    background: white;
+    color:black;
+}
+
+
+.boton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.boton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.boton:hover span {
+    padding-right: 25px;
+}
+
+.boton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.boton_chico {
+    width: fit-content !important;
+}
+
+/**---------------------Boton Buscar---------------------**/
+
+.buscar {
+    border-radius: 4px;
+    background: rgb(10, 99, 99);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 60%;
+    cursor: pointer;
+    margin: 10px;
+   
+}
+
+.buscar:hover {
+    transition: background ease-in-out 0.2s;
+    background: white;
+    color: #000;
+}
+
+
+.buscar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.buscar span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.buscar:hover span {
+    padding-right: 25px;
+}
+
+.buscar:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/**---------------------Boton Whatsapp---------------------**/
+
+.ws {
+    border-radius: 4px;
+    background: rgb(10, 99, 99);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    width: 60%;
+    cursor: pointer;
+    margin: 10px;
+   
+}
+
+.ws:hover {
+    transition: background ease-in-out 0.2s;
+    background: white;
+    color: #000;
+}
+
+
+.ws span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.ws span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.ws:hover span {
+    padding-right: 25px;
+}
+
+.ws:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/**---------------------Botones Administrador---------------------**/
+
+.adminboton {
+    border-radius: 4px;
+    background-color: rgb(10, 99, 99);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+    width: 95%;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.adminboton:hover {
+    transition: 0.2s;
+    background: white;
+    color:black;
+}
+
+
+.adminboton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.adminboton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.adminboton:hover span {
+    padding-right: 25px;
+}
+
+.adminboton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+/** ---------------------Boton Registrar---------------------**/
+
+
+
+
+.registrar {
+    border-radius: 4px;
+    background-color: rgb(34, 3, 56);
+    border: none;
+    padding: 15px;
+    font-size:15px;
+    color: #FFFFFF;
+    width: 50%;
+    margin-bottom: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.registrar:hover {
+    background-color: rgb(38, 201, 138);
+}
+
+.registrar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.registrar span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.registrar:hover span {
+    padding-right: 25px;
+}
+
+.registrar:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/**---------------------Boton Eliminar / Rojo---------------------**/
+
+.eliminar:hover {
+    background: red;
+    font-weight: bolder;
+}
+
+.exportar:hover{
+    background: green;
+    color: white;
+}
+
+/** ---------------------Footer---------------------**/
+
+footer {
+    
+    transition:ease-in-out 0.1s;
+    height: 5px;
+    background:rgb(0, 0, 0);
+    color: white;
+    padding: 3px;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+}
+
+footer a {
+    font-size: 10px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer:hover {
+    transition:ease-in-out 0.1s;
+    height: 30px;
+
+}
+
+hr {
+    position: relative;
+    border: none;
+    height: 3px;
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+}
+
+hr.linea {
+    border-top: 1px solid rgb(34, 3, 56);
+    border-radius: 3px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+hr.linea2 {
+    border-top: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+.icono {
+    width: 15px;
+    padding: 0px;
+}
+
+/** ---------------------Inputs---------------------**/
+
+input[type=text], input[type=email], input[type=tel]{
+    width: 80%;
+    height: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=date], input[type=number], select {
+    height: 30px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style:ridge;
+    border-width: 2px;
+    border-radius: 3px;
+    padding: 0 3px;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.matriz input[type=number] {
+    width: 100%;
+    margin: 20px;
+    margin-top:30px;
+
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    accent-color: rgb(10, 99, 99);
+}
+
+
+/** ---------------------Select---------------------**/
+
+select{
+    width: 100%;
+}
+
+#habi{
+    margin-top: -4px;
+}
+
+/** ---------------------Icono---------------------**/
+
+.icon {
+    width: 45px;
+}
+
+/** ---------------------ID's---------------------**/
+
+
+#tabla2 {
+    height: 100%;
+}
+
+#tabla1{
+    height: 100%;
+}
+
+#admin {
+    background:rgb(10, 99, 99);
+}
+
+#funcio{
+    background:rgb(52, 150, 133);
+}
+
+#justificar{
+    text-align: justify;
+}
+
+#centrar{
+    text-align: center;
+}
+
+#form p{
+    margin-top: 15px;
+}
+.filtros {
+    border: 2px solid lightgrey !important;
+    border-radius: 5px;
+    padding: -25px;
+}
+
+.filtros h1, h2{
+    font-size: 15px;
+}
+
+.filtros select{
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+.depa{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.imgdetalle{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.detalle{
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.detalle table {
+    width: 90%;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px !important;
+}
+
+.info p{
+    text-align: center;
+}
+
+.inicio{
+    position: fixed;
+}
+
+.collapsible {
+    background-color: rgb(34, 3, 56);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+    color: #000;
+    transition: 0.2s;
+}
+
+.content {
+    padding: 30px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
